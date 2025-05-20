@@ -1,4 +1,5 @@
 
+
 const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema(
   {
@@ -16,6 +17,7 @@ const userSchema = new mongoose.Schema(
     // Sẽ có thời gian tạo và update
     timestamps: true
   }
+
 );
 const User = mongoose.model("User", userSchema);
 module.exports = User;
