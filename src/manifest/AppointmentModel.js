@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const appointmentSchema = new mongoose.Schema(
+
     {
         customer: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, // Tham chiếu tới User làm khách hàng
         service: { type: mongoose.Schema.Types.ObjectId, ref: 'Product', required: true }, // Tham chiếu tới User làm khách hàng
@@ -10,6 +11,7 @@ const appointmentSchema = new mongoose.Schema(
     {
         timestamps: true // Tự động thêm các trường createdAt và updatedAt
     }
+
 );
 
 const Appointment = mongoose.model('Appointment', appointmentSchema);
