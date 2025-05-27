@@ -8,7 +8,6 @@ import * as UserService from '../../services/UserService'
 import Loading from "../../components/LoadingComponent/Loading";
 import { useSelector } from "react-redux";
 import { useDebounce } from "../../hooks/useDebounce";
-
 const DoctorPage = () => {
     // useLocation hiện được đường dẫn của trang và các thông tin khác khi nhấn vào type ở home
     // Lấy ra được state chữ có dấu được lưu trong url
