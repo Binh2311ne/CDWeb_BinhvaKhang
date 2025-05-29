@@ -4,7 +4,7 @@ import { Button, Form, Space, message } from "antd";
 import TableComponent from "../TableComponent/TableComponent";
 import InputComponent from "../InputComponent/InputComponent";
 import DrawerComponent from "../DrawerComponent/DrawerComponent";
-import Loading from "../LoadingComponent/Loading";
+import Loading from "../LoadingComponent/Loading ";
 import ModalComponent from "../ModalComponent/ModalComponent";
 import { convertPrice, getBase64 } from "../../utils";
 import { useSelector } from "react-redux";
