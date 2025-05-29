@@ -1,6 +1,7 @@
 const Appointment = require("../models/AppointmentModel")
 const Schedule = require("../models/ScheduleModel")
 const createAppointment = (newSchedule) =>{
+
   return new Promise(async(resolve, reject) =>{
     const { customer, service, workingHour} = newSchedule;
     try{
@@ -222,9 +223,13 @@ const updateAppointment = (id, data) =>{
 
 
 
+
 module.exports = {
+
+
   createAppointment,
   getDetailsAppointment,
   getAllAppointment,
   updateAppointment
+
 }

@@ -1,4 +1,5 @@
 
+
 const mongoose = require('mongoose');
 
 const scheduleSchema = new mongoose.Schema(
@@ -17,6 +18,7 @@ const scheduleSchema = new mongoose.Schema(
   {
     timestamps: true // Tự động thêm các trường createdAt và updatedAt
   }
+
 );
 
 const Schedule = mongoose.model('Schedule', scheduleSchema);
